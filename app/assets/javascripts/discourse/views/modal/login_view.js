@@ -121,6 +121,9 @@ Discourse.LoginView = Discourse.ModalBodyView.extend({
     if (provider === "yahoo") {
       this.set("authenticate", 'yahoo');
       return window.open(Discourse.getURL("/auth/yahoo"), "_blank", "menubar=no,status=no,height=400,width=800,left=" + left + ",top=" + top);
+    } else if (provider === "ubuntu") {
+      this.set("authenticate", 'ubuntu');
+      return window.open(Discourse.getURL("/auth/ubuntu"), "_blank", "menubar=no,status=no,height=610,width=980,left=" + left + ",top=" + top);
     } else {
       window.open(Discourse.getURL("/auth/google"), "_blank", "menubar=no,status=no,height=500,width=850,left=" + left + ",top=" + top);
       return this.set("authenticate", 'google');
