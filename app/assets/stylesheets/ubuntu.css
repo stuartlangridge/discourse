@@ -165,8 +165,8 @@ body .coldmap-med {
 }
 
 #similar-topics {
-    border: inherit;
-    background-color: inherit;
+    border-color: #cc0;
+    background-color: #ffc;
 }
 
 #nav-global .nav-global-wrapper {
